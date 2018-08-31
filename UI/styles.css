@@ -3,13 +3,120 @@ html, body {
     }
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-image: url(https://images.pexels.com/photos/5317/food-salad-restaurant-person.jpg?cs=srgb&dl=beverages-brunch-cocktail-5317.jpg&fm=jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
+    margin: 0px;
+}
+
+.bg{
+    background-image: url(https://images.pexels.com/photos/5317/food-salad-restaurant-person.jpg?cs=srgb&dl=beverages-brunch-cocktail-5317.jpg&fm=jpg);
+}
+.shaddow-0{
+    box-shadow: 0 1px 20px 0 rgba(46,61,73,.2);
+}
+
+.shaddow-1{
+    box-shadow: 0 1px 20px 0 rgba(46,61,73,.2);
+}
+.cover {
+    margin: 0px;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+}
+.wrap{
+    flex-wrap: wrap;
+    display: flex;
+}
+.flex{
+    display: flex;
+}
+
+.products{
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 
+.bt-bar, .top-bar{
+    background-color: white;
+    width: 100vw;
+}
+
+.top-bar{
+    display: inline;
+    height: 70px;
+    position: fixed;
+    align-content: space-between;
+}
+.bt-bar{
+    height: 30px;
+    bottom: 0px;
+    left: 0px;
+    position: fixed;
+}
+
+.navigation{
+    display: inline;
+    width: 20%;
+
+}
+.links{
+    display: inline;
+    width: 20%;
+
+}
+.branding{
+    display: inline;
+    position: relative;
+    width: 50%;
+}
+.branding li{
+    float: left;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    color: green;
+    list-style: none;
+    margin-top: 20px;
+}
+.navigation li{
+    border: 2px solid tomato;
+    float: right;
+    padding: 5px 10px;
+    color: white;
+    font-size: 50%;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: red;
+    list-style: none;
+    margin: 5px;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+}
+
+.links li{
+    float: left;
+    padding: 5px 10px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: red;
+    list-style: none;
+    margin: 5px;
+    margin-top: 20px;
+}
+
+.navigation li:hover{
+    border: 2px solid red;
+    color: red;
+}
 input {
     border: none;
     border-bottom: 1px solid rgba(128, 128, 128, 0.24);
@@ -45,19 +152,14 @@ a:hover{
     text-transform: uppercase;
     margin: 10px;
     cursor: pointer;
+    
 }
 .btn:hover{
     border: none;
     background-color: tomato;
+    box-shadow: 0 1px 20px 0 rgba(46,61,73,.2);
 }
 
-.container{
-    height: 100vh;
-    display: flex;
-    position: relative;
-    align-content: center;
-    justify-content: center;
-}
 
 .form-container {
     background-color: white;
@@ -68,9 +170,98 @@ a:hover{
 
 .center-me{
     position: fixed;
-    top: 50%;
     left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%)
 }
 
+
+.my-card {
+    background-color: white;
+    padding: 5px 10px;
+    width: 29.33%;
+    margin: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.card-header, .card-desc, .card-action {
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.card-header{
+    padding-top: 30px;
+    padding-bottom: -20px;
+    font-size: 150%;
+}
+.card-desc {
+    font-size: 80%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+
+}
+.card-action {
+    width: 100%;
+    font-size: 150%;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 20px;
+    color: red;
+}
+
+.card-action p{
+    border: 2px solid tomato;
+    width: 120px;
+    color: tomato;
+    margin: 5px auto;
+    font-size: 70%;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.card-action p:hover{
+    border: 2px solid red;
+    color: red;
+    box-shadow: 0 2px 20px 0 rgba(46,61,73,.2);
+}
+.card-price{
+    font-size: 60%;
+    background-color: white;
+    color: green;
+}
+.my-card img{
+    border: none;
+    background-color: black;
+    width: 100%;
+    height: 200px;
+    margin: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+    .my-card {
+        width: 46%;
+        height: 500px;
+        padding: 0px;
+        margin: 20px auto;
+        justify-self: center;
+        align-self: center;
+    }
+    
+}
+@media only screen and (max-width: 480px) {
+    .my-card {
+        width: 100%;
+        height: 400px;
+        padding: 0px;
+        margin: 20px 10px;
+        overflow: hidden;
+    }
+    
+}
 
