@@ -136,12 +136,6 @@ const items = [
 }
 ]
 
-let element=document.createElement('div');
-let desc_div=document.createElement('div');
-let img=document.createElement('img');
-let price=document.createElement('div');
-let action_div=document.createElement('div');
-
 let products = document.getElementById('products')
 
 let cards = items.map(({title, description, serves, price}) => {
