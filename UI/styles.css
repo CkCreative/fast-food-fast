@@ -73,33 +73,6 @@ body {
     width: 20%;
 
 }
-.branding{
-    display: inline;
-    position: relative;
-    width: 50%;
-}
-.branding li{
-    float: left;
-    padding: 5px 10px;
-    text-transform: uppercase;
-    color: green;
-    list-style: none;
-    margin-top: 20px;
-}
-.navigation li{
-    border: 2px solid tomato;
-    float: right;
-    padding: 5px 10px;
-    color: white;
-    font-size: 50%;
-    text-transform: uppercase;
-    cursor: pointer;
-    color: red;
-    list-style: none;
-    margin: 5px;
-    flex-direction: row-reverse;
-    margin-top: 20px;
-}
 table {
     border-collapse: collapse;
     width: 100%;
@@ -113,23 +86,32 @@ tr:nth-child(even) {
 .orders {
     padding-top: 100px;
 }
-.links li{
-    float: left;
-    padding: 5px 10px;
-    color: white;
-    text-transform: uppercase;
-    cursor: pointer;
-    color: red;
-    list-style: none;
-    margin: 5px;
-    flex-direction: row-reverse;
-    margin-top: 20px;
+ul {
+    margin-top: 25px;
+    padding: 0;
+    list-style-type: none;    
+    overflow: hidden;
 }
 
-.navigation li:hover{
-    border: 2px solid red;
-    color: red;
+li {
+    background-color: green;
+    margin: 5px;
+    float: left;
 }
+
+li a {
+    display: block;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+li a:hover{
+    text-decoration: none;
+    background-color: red;
+}
+
 input {
     border: none;
     border-bottom: 1px solid rgba(128, 128, 128, 0.24);
@@ -143,13 +125,6 @@ input:hover {
     border-bottom: 1.5px solid green;
 }
 
-a{
-    text-decoration: none;
-}
-a:hover{
-    text-decoration: none;
-    color: tomato;
-}
 
 .small-link{
     font-size: 70%;
