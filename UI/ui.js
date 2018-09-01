@@ -8,6 +8,7 @@ const items = [
     description: 'some long description outlining various benefits etc.',
     tags: ['tag1','tag2','tag3']
 },
+
 {
     id : 2,
     title : 'Food Type 2',
@@ -17,6 +18,7 @@ const items = [
     description: 'some long description outlining various benefits etc.',
     tags: ['tag1','tag2','tag3']
 },
+
 {
     id : 3,
     title : 'Food Type 3',
