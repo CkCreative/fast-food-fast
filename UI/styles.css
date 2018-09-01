@@ -54,6 +54,7 @@ body {
 
 .top-bar{
     display: inline;
+    z-index: 1000;
     height: 70px;
     position: fixed;
     align-content: space-between;
