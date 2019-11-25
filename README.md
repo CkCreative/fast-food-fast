@@ -1,5 +1,5 @@
 # fast-food-fast
-Fast food delivery app
+UI for a practice fast food delivery app. It is plain `HTML` and `CSS`
 
 
 Hosted at [GitHub Pages](https://ckcreative.github.io/fast-food-fast/UI/)
